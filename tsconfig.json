@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "commonjs",
+        "declarationDir": "."
+    },
+    "exclude": [
+        "node_modules",
+        "**.d.ts"
+    ]
+}
