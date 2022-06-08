@@ -1,5 +1,5 @@
 {
-  "name": "pocketjs",
+  "name": "storage-pocket",
   "version": "0.1.0",
   "description": "give the localstorge in the browser some powerful features",
   "main": "dist/index.js",
