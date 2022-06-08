@@ -1,7 +1,7 @@
 {
   "name": "storage-pocket",
   "version": "0.1.0",
-  "description": "give the localstorge in the browser some powerful features",
+  "description": "简单的 LocalStorage 数据管理工具",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
   "module": "dist/index.esm.js",

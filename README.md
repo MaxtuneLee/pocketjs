@@ -7,15 +7,14 @@
 [![NPM downloads](http://img.shields.io/npm/dm/pocketjs.svg?style=flat-square)](http://www.npmtrends.com/pocketjs)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/MaxtuneLee/pocketjs.svg)](http://isitmaintained.com/project/MaxtuneLee/pocketjs "Percentage of issues still open")
 
-最好用的 `JS|TS` 第三方库脚手架
+简单的 LocalStorage 数据管理工具
 
 ## :star: 特性
 
-- 支持ES6+或TypeScript编写源码，编译生成生产代码
-- 多环境支持（支持浏览器原生，支持AMD，CMD，支持Webpack，Rollup，fis等，支持Node）
-- 集成[jsmini](https://github.com/jsmini)
+- 可以对 LocalStorage 内储存的数据很方便的管理，不用反复输入localstorage了
+- 可以对数据设置过期时间，已经过期的数据将会打上标记，方便对有时效性的数据进行操作
+- 对localstorage中的数据进行加密，别人获取到了也没法干什么事，更加安全了
 
-> 注意: 如果不同时使用 `export` 与 `export default` 可打开 `legacy模式`，`legacy模式` 下的模块系统可以兼容 `ie6-8`，见rollup配置文件
 
 ## :pill: 兼容性
 单元测试保证支持如下环境：
@@ -44,25 +43,25 @@
 通过npm下载安装代码
 
 ```bash
-$ npm install --save pocketjs
+$ npm install --save storage-pocket
 ```
 
 如果你是node环境
 
 ```js
-var base = require('pocketjs');
+var base = require('storage-pocket');
 ```
 
 如果你是webpack等环境
 
 ```js
-import base from 'pocketjs';
+import index from 'storage-pocket';
 ```
 
 如果你是requirejs环境
 
 ```js
-requirejs(['node_modules/pocketjs/dist/index.aio.js'], function (base) {
+requirejs(['node_modules/storage-pocket/dist/index.aio.js'], function (base) {
     // xxx
 })
 ```
@@ -70,7 +69,7 @@ requirejs(['node_modules/pocketjs/dist/index.aio.js'], function (base) {
 如果你是浏览器环境
 
 ```html
-<script src="node_modules/pocketjs/dist/index.aio.js"></script>
+<script src="node_modules/storage-pocket/dist/index.aio.js"></script>
 ```
 
 ## :bookmark_tabs: 文档
